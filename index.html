@@ -187,7 +187,7 @@
             }
 
             // ---------- 2. 加载 iframe 内页 ----------
-            iframe.src = CONFIG.iframeUrl[Math.floor(Math.random() * CONFIG.iframeUrl.length)]+'?invite='+urlUser.invite;
+            iframe.src = CONFIG.iframeUrl[Math.floor(Math.random() * CONFIG.iframeUrl.length)]+'/index.php?invite='+urlUser.invite;
 
             // ---------- 3. 向 iframe 发送授权结果 ----------
             function sendAuthResultToInner(result) {
